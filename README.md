@@ -1,0 +1,2 @@
+# fluxo
+empregos :   publicar :     roda em : ubuntu-mais recente     passos :      - nome : Checkout       usa : ações / checkout @ v2       com :         persist-credentials : false      - name : Implementar no Netlify       usa : MarcelGerber / netlify-actions / cli @ master       com :         args : deploy --dir =. / public / --prod       env :         NETLIFY_SITE_ID : $ {{secrets.NETLIFY_SITE_ID}}         NETLIFY_AUTH_TOKEN : $ {{secrets.NETLIFY_AUTH_TOKEN}}
